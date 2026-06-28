@@ -15,7 +15,11 @@
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script>tailwind.config={theme:{extend:{colors:{brand:{dark:'#1e293b',accent:'#2c3e50',gold:'#C0A063',light:'#f8f5f0',textDark:'#333333',textLight:'#e5e7eb'}},fontFamily:{serif:['"Playfair Display"','serif'],sans:['Lato','sans-serif']}}}}</script>
   <style type="text/tailwindcss">
-        html{scroll-behavior:smooth;overflow-x:clip}
+        html{scroll-behavior:smooth;overflow-x:clip;scrollbar-width:thin;scrollbar-color:#9a8351 #f8f5f0}
+        ::-webkit-scrollbar{width:8px}
+        ::-webkit-scrollbar-track{background:#f8f5f0}
+        ::-webkit-scrollbar-thumb{background:#9a8351;border-radius:4px;border:2px solid #f8f5f0}
+        ::-webkit-scrollbar-thumb:hover{background:#C0A063}
         body{font-family:'Lato',sans-serif;overflow-x:clip;color:#333}
         h1,h2,h3,h4{font-family:'Playfair Display',serif}
         .section-label{@apply text-brand-gold text-xs sm:text-sm font-bold uppercase tracking-[0.25em] mb-3 block}
