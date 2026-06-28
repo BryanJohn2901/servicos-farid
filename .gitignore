@@ -1,0 +1,15 @@
+# Original image formats (replaced by WebP)
+img/*.png
+img/*.jpg
+img/*.jpeg
+img/depoimentos/*.png
+img/mosaico/*.jpg
+img/mosaico/*.jpeg
+img/depoimentos/depoimentos-txt/*.jpeg
+
+# Vercel local config
+.vercel/
+
+# OS
+.DS_Store
+Thumbs.db
