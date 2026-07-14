@@ -1,0 +1,15 @@
+{
+  "name": "servicos-farid",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Build de produção estático (site Dr. Farid Bark Hamdar)",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "html-minifier-terser": "^7.2.0",
+    "sharp": "^0.35.3",
+    "tailwindcss": "^3.4.14",
+    "terser": "^5.36.0"
+  }
+}

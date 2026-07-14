@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{scroll-behavior:smooth;overflow-x:clip;scrollbar-width:thin;scrollbar-color:#9a8351 #f8f5f0}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:#f8f5f0}
+::-webkit-scrollbar-thumb{background:#9a8351;border-radius:4px;border:2px solid #f8f5f0}
+::-webkit-scrollbar-thumb:hover{background:#C0A063}
+body{font-family:'Lato',sans-serif;overflow-x:clip;color:#333}
+h1,h2,h3,h4{font-family:'Playfair Display',serif}
+.section-label{@apply text-brand-gold text-xs sm:text-sm font-bold uppercase tracking-[0.25em] mb-3 block}
+.section-title{@apply text-3xl md:text-4xl lg:text-[2.75rem] font-serif leading-tight}
+.section-divider{@apply w-16 h-1 bg-brand-gold mx-auto mt-5 rounded-full}
+.card-light{@apply bg-white rounded-2xl p-6 md:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-black/[0.04] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.1)] hover:-translate-y-1}
+.card-dark{@apply bg-white/5 rounded-2xl p-6 md:p-8 border border-white/10 backdrop-blur-sm transition-all duration-300 hover:border-brand-gold/40 hover:bg-white/[0.08]}
+.card-stat{@apply bg-white rounded-2xl p-6 text-center shadow-md border border-brand-gold/10 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-brand-gold/30}
+.link-footer{@apply text-brand-textLight/60 hover:text-brand-gold transition-colors duration-300}
+details summary::-webkit-details-marker{display:none}
+details[open] summary~*{animation:sweep .4s ease-out}
+@keyframes sweep{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+.whatsapp-float{bottom:max(1rem,env(safe-area-inset-bottom,1rem));right:max(1rem,env(safe-area-inset-right,1rem))}
+.btn-cta{@apply inline-flex items-center justify-center gap-3 rounded-lg font-bold uppercase tracking-wider shadow-lg transition-all duration-300}
+.btn-gold{@apply bg-brand-gold text-brand-dark hover:bg-[#d4b87a] hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0}
+.btn-dark{@apply bg-brand-dark text-white hover:bg-[#2a3f56] hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0}
+.btn-whatsapp{@apply bg-[#25D366] text-white hover:bg-[#1faa59] hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0}
+.btn-outline{@apply bg-white border-2 border-brand-dark/20 text-brand-dark hover:bg-brand-dark hover:text-white hover:border-brand-dark}
+.nav-wa{@apply bg-brand-gold text-brand-dark font-bold py-2.5 px-5 md:px-6 rounded-lg shadow-lg uppercase tracking-widest text-[10px] sm:text-xs flex items-center gap-2 transition-all duration-300 hover:bg-[#d4b87a] hover:shadow-xl hover:-translate-y-0.5}
+.faq-toggle{@apply w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-brand-gold/20}
+.video-card{@apply aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border-2 border-brand-gold/20 bg-black transition-all duration-300 hover:border-brand-gold/50 hover:shadow-2xl hover:-translate-y-1}
+.hero-doctor-img{height:min(68vh,660px);display:block;margin:0;padding:0;vertical-align:bottom;line-height:0}
+@media (min-width:1024px){.hero-section{min-height:calc(min(68vh,660px) + clamp(4rem,8vh,7rem))}}

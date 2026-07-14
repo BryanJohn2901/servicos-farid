@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{scroll-behavior:smooth;overflow-x:clip;scrollbar-width:thin;scrollbar-color:#9a8351 #f3eee6}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:#f3eee6}
+::-webkit-scrollbar-thumb{background:#9a8351;border-radius:4px;border:2px solid #f3eee6}
+::-webkit-scrollbar-thumb:hover{background:#C0A063}
+body{font-family:'Lato',sans-serif;overflow-x:clip;min-height:100vh;color:#333}
+h1,h2,h3{font-family:'Playfair Display',serif}
+.whatsapp-float{bottom:max(1rem,env(safe-area-inset-bottom,1rem));right:max(1rem,env(safe-area-inset-right,1rem))}
+.nav-wa{@apply bg-brand-gold text-brand-dark font-bold py-2.5 px-6 rounded-lg shadow-lg uppercase tracking-widest text-[10px] sm:text-xs flex items-center gap-2 transition-all duration-300 hover:bg-[#d4b87a] hover:shadow-xl hover:-translate-y-0.5}
+.service-card{@apply relative overflow-hidden rounded-2xl bg-[#f3eee6] min-h-[340px] md:min-h-[400px] shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_16px_48px_rgba(0,0,0,0.14)] hover:-translate-y-1}
+.service-btn{@apply mt-5 inline-flex items-center justify-center gap-2 bg-[#1a2d3e] text-white font-bold py-3 px-5 rounded-lg shadow-lg text-sm transition-all duration-300 hover:bg-[#25364c] hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto}
